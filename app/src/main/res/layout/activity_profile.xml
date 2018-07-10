@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/notificationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTIFICATION"
+                android:textSize="16dp"
+                android:background="@color/white"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginTop="8dp"
+                android:elevation="4dp"
+                android:textColor="@color/textcolor"
+                android:gravity="center_horizontal"/>
+            <View
+                android:layout_marginHorizontal="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividercolor">
+
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Updating notification"
+                android:textColor="@color/textcolor"
+                android:paddingTop="10dp"
+                android:id="@+id/notificationBox"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:background="@color/white"
+                android:layout_marginHorizontal="6dp"
+                android:elevation="4dp"/>
+            <TextView
+                android:id="@+id/readmore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:paddingHorizontal="10dp"
+                android:elevation="4dp"
+                android:background="@color/white"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
